@@ -1,0 +1,22 @@
+.user-information{
+    background: #5a5a5a;
+    padding: 10px 40px;
+    border-radius: 10px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+}
+
+.user-information image{
+    width: 30%;
+}
+
+.user-information .image img{
+    width: 100%;
+}
+
+.more-data img{
+    width: 5%
+}
