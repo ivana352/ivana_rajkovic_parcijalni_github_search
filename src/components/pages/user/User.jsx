@@ -4,10 +4,12 @@ import user from "../../../assets/user.png"
 import location from "../../../assets/location.png"
 import information from "../../../assets/information.png"
 import github from "../../../assets/github.png"
+import { Link } from "react-router-dom";
 
 const User = () => {
     return(
         <div className="container">
+            <Link to="/" className="back"> RESET </Link>
             <div className="user-information">
 
                 <div className="image">
@@ -22,22 +24,22 @@ const User = () => {
 
                         <p> 
                             <img src={user} alt="user icon"/> 
-                            user: 
+                            User name: 
                         </p>
 
                         <p> 
                             <img src={location} alt="location icon"/> 
-                            location: 
+                            Location: 
                         </p>
 
                         <p> 
                             <img src={information} alt="info icon"/> 
-                            bio: 
+                            User info: 
                         </p>
 
                         <p> 
                             <img src={github} alt="github icon"/> 
-                            View github profile: 
+                            <a href="#"> View github profile: </a>
                         </p>
 
                     </div>
@@ -46,7 +48,9 @@ const User = () => {
 
             <div className="user-repos">
                 <div className="repo">
-                    <h3>Name of the repository:</h3>
+                    <h3>
+                        <a href="#"> Name of the repository: </a>
+                    </h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quis at totam et. Laborum ullam quo repellat doloribus. Nulla maiores ipsam autem sequi consectetur, vitae possimus? Eos vel nemo deserunt!</p>
                     <br />
                     <small>Written in JavaScript</small>
