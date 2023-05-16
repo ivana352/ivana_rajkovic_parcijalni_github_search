@@ -7,7 +7,6 @@ import github from "../../../assets/github.png"
 import { Link, useParams } from "react-router-dom";
 import axios from "../../../axios";
 import Repo from "../ui/Repo";
-// import Repo from "../../ui/Repo";
 
 const User = () => {
 
@@ -71,7 +70,7 @@ const User = () => {
                         </p>}
                             
                         {userInfo?.blog && <p>
-                            <img src={user} 
+                            <img src={information} 
                                  alt=""
                             />
                             {userInfo?.blog}
