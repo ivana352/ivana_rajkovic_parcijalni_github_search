@@ -1,5 +1,5 @@
 .search-form{
-    background: #5a5a5a;
+    background: #8a8a8a;
     padding: 10px 40px;
     border-radius: 10px;
     height: 150px;
@@ -26,7 +26,7 @@
 
 .search-form button{
     padding: 14px 40px;
-    background-color: green;
+    background-color: rgb(23, 172, 23);
 }
 
 .search-results{
@@ -51,7 +51,7 @@
 
 .user .image img{
     width: 100%;
-    border-radius: 15%;
+    border-radius: 50%;
 }
 
 .user-info *{
