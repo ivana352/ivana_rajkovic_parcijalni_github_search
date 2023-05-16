@@ -9,7 +9,9 @@ import { Link } from "react-router-dom";
 const User = () => {
     return(
         <div className="container">
-            <Link to="/" className="back"> RESET </Link>
+                <Link to="/" className="back"> 
+                    <button>RESET</button>
+                </Link>
             <div className="user-information">
 
                 <div className="image">
