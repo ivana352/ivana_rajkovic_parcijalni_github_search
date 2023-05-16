@@ -36,7 +36,12 @@ const Home = () => {
 
     const fetchUsers = async () => {
         try{
-        const {data} = await axios.get("/search/users?q=" + query)
+        const {data} = await axios.get("/search/users?q=" + query, {
+            params:{
+                page,
+                per_page: limit
+            }
+        })
             return data?.items; 
         } catch (error) {
             console.error(error);
@@ -56,7 +61,7 @@ const Home = () => {
     }
 
     useEffect(() => {
-        const displayUsersOnChange = () => {
+        const displayUsersOnChange = async () => {
             if(query) {
                 const items = await fetchUsers();
                 setUsers(items);
